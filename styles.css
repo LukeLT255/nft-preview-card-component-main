@@ -1,0 +1,171 @@
+/* variables */
+:root {
+    --soft-blue: #8BACD9;
+    --white: #FFFFFF;
+    --cyan: #00FFF8;
+    --very-dark-blue: #0D192C;
+    --dark-blue: #15263F;
+    --dark-blue-line-color: #2E405A;
+
+}
+
+/* reset */
+p,h1,span {
+    margin: 0;
+    padding: 0;
+}
+
+/* fonts */
+* {
+    font-family: "Outfit";
+}
+
+/* base styles */
+html {
+    height: 100%;
+}
+
+body {
+    background-color: var(--very-dark-blue);
+    height: 100%;
+
+}
+
+main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    background-color: var(--dark-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px;
+    width: 280px;
+    height: 520px;
+    border-radius: 20px;
+}
+
+#ethereum {
+    width: 11px;
+    height: 18px;
+    margin-right: 10px;
+    
+}
+
+#clock {
+    width: 16px;
+    height: 16px;
+    padding-top: 2px;
+}
+
+#artist-image {
+    width: 33px;
+    height: 33px;
+}
+
+h1, span {
+    color: var(--white);
+}
+
+p {
+    
+    color: var(--soft-blue);
+    font-weight: 300;
+    
+}
+
+p:first {
+    line-height: 26px;
+    padding-right: 43px;
+    letter-spacing: 0.5px;
+}
+
+h1 {
+    letter-spacing: 0.5px;
+}
+
+#price {
+    color: var(--cyan);
+    font-weight: 400;
+}
+
+#time, #artist {
+    font-weight: 300;
+}
+
+#time {
+    margin-left: 6px;
+}
+
+div {
+    display: flex;
+}
+
+.price-and-time-left {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--dark-blue-line-color);
+}
+
+#art-image {
+    height: 278px;
+    width: 278px;
+    border-radius: 10px;
+    
+    
+}
+
+#artist-image {
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+}
+
+.artist-profile {
+    display: flex;
+    align-items: center;
+}
+
+#artist {
+    margin-left: 16px;
+}
+
+span:hover, h1:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.art-image-div {
+    background-color: #00FFF8;
+    border-radius: 12px;
+    border-width: 0;
+    height: 278px;
+    width: 278px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#eye {
+    height: 48px;
+    width: 48px;
+    position: absolute;
+    align-self: center;
+    display: none;
+    
+}
+
+
+.art-image-div:hover #art-image {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.art-image-div:hover #eye {
+    display:block;
+    cursor: pointer;
+}
